@@ -1,0 +1,15 @@
+plugins {
+id 'java'
+id 'application'
+}
+
+mainClassName= "ru.rt.client.MyFirstProgram"
+
+repositories{
+    mavenCentral()
+}
+
+
+dependencies {
+    implementation 'org.testng:testng:6.14.3'
+}
