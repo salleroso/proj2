@@ -44,8 +44,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/tests/GroupModificationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/appManager/GroupHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+            <state relative-caret-position="460">
+              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#229#230#0" expanded="true" />
@@ -99,6 +102,8 @@
                 <element signature="e#848#849#0" expanded="true" />
                 <element signature="e#892#893#0" expanded="true" />
                 <element signature="e#915#916#0" expanded="true" />
+                <element signature="e#965#966#0" expanded="true" />
+                <element signature="e#988#989#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/tests/GroupCreationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="204">
+              <caret line="12" column="99" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="99" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,7 +164,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="HelperBaseLesson" />
       </map>
     </option>
   </component>
@@ -183,12 +188,12 @@
         <option value="$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/appManager/GroupBase.java" />
         <option value="$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/tests/GroupCreationTest.java" />
-        <option value="$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/tests/GroupModificationTest.java" />
         <option value="$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/appManager/SessionHelper.java" />
         <option value="$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/appManager/NavigationHelper.java" />
         <option value="$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/appManager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/appManager/HelperBase.java" />
         <option value="$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/appManager/GroupHelper.java" />
+        <option value="$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/tests/GroupModificationTest.java" />
       </list>
     </option>
   </component>
@@ -341,7 +346,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554210196855" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554210319954" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -507,13 +512,17 @@
       <option name="project" value="LOCAL" />
       <updated>1554209887129</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавлен  тест модификации группы.">
+      <created>1554210258119</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554210258119</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GroupModificationTest - 2019.04.02 at 14h 39m 23s.xml">
-      <configuration name="GroupModificationTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="GroupCreationTest - 2019.04.02 at 14h 40m 04s.xml">
       <configuration name="GroupCreationTest" configurationId="TestNG" />
     </history-entry>
@@ -540,6 +549,9 @@
     </history-entry>
     <history-entry file="GroupCreationTest - 2019.04.02 at 15h 58m 30s.xml">
       <configuration name="GroupCreationTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GroupModificationTest - 2019.04.02 at 16h 03m 14s.xml">
+      <configuration name="GroupModificationTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -623,7 +635,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="Создание двухуровневой  архитектуры." />
-    <option name="LAST_COMMIT_MESSAGE" value="Создание двухуровневой  архитектуры." />
+    <MESSAGE value="Добавлен  тест модификации группы." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен  тест модификации группы." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -713,10 +726,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/tests/GroupCreationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="99" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/appManager/GroupHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        <state relative-caret-position="460">
+          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#229#230#0" expanded="true" />
@@ -731,24 +754,19 @@
             <element signature="e#848#849#0" expanded="true" />
             <element signature="e#892#893#0" expanded="true" />
             <element signature="e#915#916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/tests/GroupCreationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/address-book-tests/src/test/java/ru/rt/client/tests/GroupModificationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
