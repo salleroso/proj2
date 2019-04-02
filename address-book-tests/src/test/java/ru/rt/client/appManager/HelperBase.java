@@ -1,12 +1,12 @@
 package ru.rt.client.appManager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 
 public class HelperBase {
     protected WebDriver driver;
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
+
     public HelperBase(WebDriver driver) {
         this.driver = driver;
     }
@@ -20,7 +20,6 @@ public class HelperBase {
         driver.findElement(locator).clear();
         driver.findElement(locator).sendKeys(text);
     }
-
 
     private boolean isElementPresent(By by) {
         try {
@@ -54,4 +53,5 @@ public class HelperBase {
             acceptNextAlert = true;
         }
     }
-}
+
+    }
