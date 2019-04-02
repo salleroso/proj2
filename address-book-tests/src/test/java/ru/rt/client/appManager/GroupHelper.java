@@ -6,43 +6,37 @@ import ru.rt.client.model.GroupDate;
 
 public class GroupHelper extends HelperBase {
 
-
     public GroupHelper(WebDriver driver) {
-       super(driver);
+        super(driver);
     }
 
     public void submitGroupCreation() {
-        driver.findElement(By.name("submit")).click();
+        click(By.name("submit"));
     }
 
-    public void fillGroupForm(GroupDate groupDate) {
-        driver.findElement(By.name("group_name")).click();
-        driver.findElement(By.name("group_name")).clear();
-        driver.findElement(By.name("group_name")).sendKeys(groupDate.getName());
-        driver.findElement(By.name("group_header")).click();
-        driver.findElement(By.name("group_header")).clear();
-        driver.findElement(By.name("group_header")).sendKeys(groupDate.getHeader());
-        driver.findElement(By.name("group_footer")).click();
-        driver.findElement(By.name("group_footer")).clear();
-        driver.findElement(By.name("group_footer")).sendKeys(groupDate.getFooter());
-        driver.findElement(By.id("content")).click();
+    public  void fillGroupForm(GroupDate groupDate) {
+        type (By.name("group_name"), groupDate.getName());
+        type(By.name("group_header"), groupDate.getHeader());
+        type(By.name("group_footer"), groupDate.getFooter());
+        click(By.id("content"));
     }
 
-    public void initGroupCreation() {
-        driver.findElement(By.name("new")).click();
+    public  void initGroupCreation() {
+        click(By.name("new"));
     }
 
-    public void clickDeleteBtn() {
-        driver.findElement(By.name("delete")).click();
+    public  void clickDeleteBtn() {
+        click(By.name("delete"));
     }
 
-    public void SelectGroup() {
-        driver.findElement(By.name("selected[]")).click();
+    public  void SelectGroup() {
+        click(By.name("selected[]"));
     }
-
 
     public void clickModificationGroup() {
-
+        click(By.name("edit"));
     }
-}
+    }
+
+
 
