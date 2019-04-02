@@ -1,22 +1,18 @@
-package ru.rt.client;
+package ru.rt.client.appManager;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import ru.rt.client.model.GroupDate;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.testng.Assert.fail;
-
-public class TestBase {
-    protected WebDriver driver;
+public class ApplicationManager {
+    public  WebDriver driver;
     private String baseUrl;
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
 
-    @BeforeClass(alwaysRun = true)
-    public void setUp() throws Exception {
+    public  void init() {
         driver = new FirefoxDriver();
         baseUrl = "http://localhost/addressbook/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -33,11 +29,11 @@ public class TestBase {
         driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::input[2]")).click();
     }
 
-    protected void submitGroupCreation() {
+    public void submitGroupCreation() {
         driver.findElement(By.name("submit")).click();
     }
 
-    protected void fillGroupForm(GroupDate groupDate) {
+    public  void fillGroupForm(GroupDate groupDate) {
         driver.findElement(By.name("group_name")).click();
         driver.findElement(By.name("group_name")).clear();
         driver.findElement(By.name("group_name")).sendKeys(groupDate.getName());
@@ -50,30 +46,24 @@ public class TestBase {
         driver.findElement(By.id("content")).click();
     }
 
-    protected void initGroupCreation() {
+    public  void initGroupCreation() {
         driver.findElement(By.name("new")).click();
     }
 
-    protected void navToGroupPage() {
+    public  void navToGroupPage() {
         driver.findElement(By.xpath(".//a[@href='group.php']")).click();
     }
 
-    protected void clickDeleteBtn() {
+    public  void clickDeleteBtn() {
         driver.findElement(By.name("delete")).click();
     }
 
-    protected void SelectGroup() {
+    public  void SelectGroup() {
         driver.findElement(By.name("selected[]")).click();
     }
 
-
-    @AfterClass(alwaysRun = true)
-    public void tearDown() throws Exception {
+    public  void stop() {
         driver.quit();
-        String verificationErrorString = verificationErrors.toString();
-        if (!"".equals(verificationErrorString)) {
-            fail(verificationErrorString);
-        }
     }
 
     private boolean isElementPresent(By by) {
@@ -108,6 +98,4 @@ public class TestBase {
             acceptNextAlert = true;
         }
     }
-
-
 }
