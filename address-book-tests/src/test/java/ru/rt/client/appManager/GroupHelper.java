@@ -4,12 +4,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import ru.rt.client.model.GroupDate;
 
-public class GroupHelper {
+public class GroupHelper  {
    private WebDriver driver;
 
     public GroupHelper(WebDriver driver) {
         this.driver=driver;
+    }
 
+    public void submitGroupCreation() {
+        driver.findElement(By.name("submit")).click();
     }
 
     public  void fillGroupForm(GroupDate groupDate) {
@@ -36,4 +39,7 @@ public class GroupHelper {
     public  void SelectGroup() {
         driver.findElement(By.name("selected[]")).click();
     }
+
+
+
 }

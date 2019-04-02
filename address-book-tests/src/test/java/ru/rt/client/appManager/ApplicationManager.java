@@ -1,3 +1,4 @@
+
 package ru.rt.client.appManager;
 
 import org.openqa.selenium.*;
@@ -5,9 +6,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class ApplicationManager {
+public class ApplicationManager  {
     private NavigationHelper navigationHelper;
-    private  GroupHelper groupHelper ;
+    private GroupHelper groupHelper ;
     private SessionHelper sessionHelper;
     private String baseUrl;
     private boolean acceptNextAlert = true;
@@ -25,13 +26,11 @@ public class ApplicationManager {
     }
 
 
-    public void submitGroupCreation() {
-        driver.findElement(By.name("submit")).click();
-    }
-
     public  void stop() {
         driver.quit();
     }
+
+
 
     private boolean isElementPresent(By by) {
         try {
