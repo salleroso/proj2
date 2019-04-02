@@ -15,3 +15,4 @@ public class GroupModificationTest extends TestBase {
         app.getGroupHelper().clickBuUpdate();
     }
 }
+1
