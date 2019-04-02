@@ -1,6 +1,7 @@
 package ru.rt.client.appManager;
 
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 public class HelperBase {
     protected WebDriver driver;
@@ -19,6 +20,7 @@ public class HelperBase {
         driver.findElement(locator).clear();
         driver.findElement(locator).sendKeys(text);
     }
+
 
     private boolean isElementPresent(By by) {
         try {
