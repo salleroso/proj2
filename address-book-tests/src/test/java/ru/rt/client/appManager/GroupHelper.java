@@ -4,42 +4,43 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import ru.rt.client.model.GroupDate;
 
-public class GroupHelper  {
-   private WebDriver driver;
+public class GroupHelper extends HelperBase {
 
     public GroupHelper(WebDriver driver) {
-        this.driver=driver;
+        super(driver);
     }
 
     public void submitGroupCreation() {
-        driver.findElement(By.name("submit")).click();
+        click(By.name("submit"));
     }
 
     public  void fillGroupForm(GroupDate groupDate) {
-        driver.findElement(By.name("group_name")).click();
-        driver.findElement(By.name("group_name")).clear();
-        driver.findElement(By.name("group_name")).sendKeys(groupDate.getName());
-        driver.findElement(By.name("group_header")).click();
-        driver.findElement(By.name("group_header")).clear();
-        driver.findElement(By.name("group_header")).sendKeys(groupDate.getHeader());
-        driver.findElement(By.name("group_footer")).click();
-        driver.findElement(By.name("group_footer")).clear();
-        driver.findElement(By.name("group_footer")).sendKeys(groupDate.getFooter());
-        driver.findElement(By.id("content")).click();
+        type (By.name("group_name"), groupDate.getName());
+        type(By.name("group_header"), groupDate.getHeader());
+        type(By.name("group_footer"), groupDate.getFooter());
+        click(By.id("content"));
     }
 
     public  void initGroupCreation() {
-        driver.findElement(By.name("new")).click();
+        click(By.name("new"));
     }
 
     public  void clickDeleteBtn() {
-        driver.findElement(By.name("delete")).click();
+        click(By.name("delete"));
     }
 
     public  void SelectGroup() {
-        driver.findElement(By.name("selected[]")).click();
+        click(By.name("selected[]"));
     }
 
+    public void clickModificationGroup() {
+        click(By.name("edit"));
+    }
 
-
+    public void clickBuUpdate() {
+        click(By.xpath(".//input[@name='update']"));
+    }
 }
+
+
+
