@@ -36,7 +36,11 @@ public class GroupHelper extends HelperBase {
     public void clickModificationGroup() {
         click(By.name("edit"));
     }
+
+    public void clickBuUpdate() {
+        click(By.xpath(".//input[@name='update']"));
     }
+}
 
 
 
